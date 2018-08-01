@@ -1,0 +1,13 @@
+{
+    "name": "applepaw",
+    "version": "1.0.0",
+    "description": "Warriors name generator",
+    "main": "bot.js",
+    "repository": "git@github.com:jameliaodell/applepaw.git",
+    "author": "Jaden O'Dell",
+    "license": "bsd-3-clause",
+    "dependencies": {
+        "discord.io": "izy521/discord.io",
+        "winston": "^3.0.0"
+    }
+}

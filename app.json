@@ -1,0 +1,23 @@
+{
+    "name": "applepaw",
+    "description": "Warriors name generator!",
+    "scripts": {
+      "postdeploy": "node bot.js"
+    },
+    "env": {
+    },
+    "formation": {
+      "web": {
+        "quantity": 1
+      }
+    },
+    "addons": [
+  
+    ],
+    "buildpacks": [
+      {
+        "url": "heroku/nodejs"
+      }
+    ]
+  }
+  
