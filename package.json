@@ -2,12 +2,18 @@
   "name": "applepaw",
   "version": "1.0.0",
   "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
   "author": "Jaden O'Dell",
   "license": "MIT",
   "description": "Original character bot",
   "dependencies": {
     "cjs": "0.0.11",
     "discord.js": "^11.4.2",
+    "enmap": "^5.0.1",
+    "fs": "0.0.1-security",
     "websocket": "^1.0.28"
   }
 }

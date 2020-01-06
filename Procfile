@@ -1,2 +1,2 @@
-node node bot.js
+node node shard.js
 

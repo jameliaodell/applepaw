@@ -5,6 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+Merry Christmas!
+
+## [3.0.0] - 2019-10-03
+### Added
+- We're now on Patreon, Twitter, and Tumblr!
+- Thanks to my patrons: jtc763
+- Allegiances generator
+- Herbs generator
+- Full cat generator
+
+### Changed
+- New support server link
 
 ## [2.0.0] - 2019-05-04
 ### Added
