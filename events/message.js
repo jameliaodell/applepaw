@@ -3,7 +3,7 @@ module.exports = (client, message) => {
     if (message.author.bot) return;
     if (!message.guild) return;
 
-    const prefixes = ['ap ', 'applepaw ', 'ap', 'applepaw'];
+    const prefixes = ['ap ', 'applepaw ', 'ap', 'applepaw', 'ap!', 'applepaw!'];
     let prefix = false;
     for (const thisPrefix of prefixes) {
         if (message.content.toLowerCase().startsWith(thisPrefix)) prefix = thisPrefix;

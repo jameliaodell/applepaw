@@ -22,7 +22,7 @@ fs.readdir("./events/", (err, files ) => {
 client.commands = new Enmap();
 
 fs.readdir("./commands/", (err, files) => {
-    if (err) return console.error(err);
+    if (err) return client.channels.get("663872366983774208").send(err);
     files.forEach(file => {
         if (!file.endsWith(".js")) return;
         let props = require(`./commands/${file}`);
@@ -33,7 +33,9 @@ fs.readdir("./commands/", (err, files) => {
 
 client.on('unhandledRejection', err => {
     let msg = err.stack.replace(new RegExp(`${__dirname}/`, 'g'), './');
-	console.error(`Unhandled Rejection: \n ${msg}`);
+	if (err) {
+        client.channels.get("663872366983774208").send(`Unhandled Rejection: \n ${msg}`);
+    }
 });
 
 client.login(config.token);

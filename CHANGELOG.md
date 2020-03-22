@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 Merry Christmas!
 
+## [3.0.1] - 2020-03-21
+### Added
+- Animal Crossing commands!
+
+### Changed
+- Had to rewrite stats command for Discord.js 12.0.2
+- Huge overhaul of commands base
+
 ## [3.0.0] - 2019-10-03
 ### Added
 - We're now on Patreon, Twitter, and Tumblr!

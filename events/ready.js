@@ -1,8 +1,8 @@
 module.exports = async (client) => {
 
     const promises = [
-        client.shard.fetchClientValues('guilds.size'),
-        client.shard.broadcastEval('this.guilds.reduce((prev, guild) => prev + guild.memberCount, 0)')
+        client.shard.fetchClientValues('guilds.cache.size'),
+        client.shard.broadcastEval('this.guilds.cache.reduce((prev, guild) => prev + guild.memberCount, 0)')
         ];
             return Promise.all(promises)
             .then(results => {
@@ -18,8 +18,8 @@ module.exports = async (client) => {
                 console.log("     (_/`~~      ````(;`");
 
                 client.user.setStatus(`available`);
-                client.user.setActivity(`over ${totalGuilds} servers! | ap help`, {type: 'WATCHING'});
-                client.guilds.get("629116683252137984").channels.get("629435571437305876").send(`Restarted. Now serving ${totalGuilds} servers and ${totalMembers} users! Meow!`);
+                client.user.setActivity(`over ${totalGuilds} servers! | ap!help`, {type: 'WATCHING'});
+                client.guilds.cache.get("578794594032943115").channels.cache.get("663872366983774208").send(`Restarted. Now serving ${totalGuilds} servers and ${totalMembers} users! Meow!`);
             })
         .catch(console.error);
 }
